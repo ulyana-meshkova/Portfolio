@@ -17,6 +17,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 .header__inner{
     background-image: url(../images/bg.jpg);
@@ -27,7 +28,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 88px;
+
 }
 .logo{
     margin: 0;
@@ -43,51 +45,66 @@ body{
 .header__menu{
     margin-left: auto;
 }
+
 .menu__list{
     display: flex;
     padding: 0;
     list-style: none;
-}
-.menu__list-item{
-    margin-left: 30px;
+
+    max-width: 500px;
 
 }
-.menu__list-item:last-of-type{
+
+.menu__list-item{
+    margin-left: 30px;
+}
+
+.menu__list-item:last-child{
     margin-right: 30px;
 }
+
 .menu__link{
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
 
 }
+
 .button{
     padding: 0;
-    background-color: transparent;
-    background-repeat: no-repeat;
+    background-color: transparent; 
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
     color: #ffffff;
+    
     font-family: 'Inter';
     font-style: normal;
+    
     font-weight: 700;
     font-size: 20px;
+    /*
     line-height: 50px;
-    text-align: center;
+    text-align: center; */
 }
 .button__english{
-    margin-right: 9px;
+    margin-right: 3px;
 }
 .button__russian{
-    margin-left: 9px;
+    margin-left: 3px;
 }
+
 .header__content-inner{
-    padding-top: 160px;
-    padding-left: 60px;
-    padding-bottom: 330px;
+
 }
+.header__content-desc{
+    margin-top: 160px;
+    margin-left: 60px;
+    padding-bottom: 332px;
+    width: 500px;
+}
+
 .header__content-title{
     font-family: 'Merriweather';
     font-style: normal;
@@ -96,14 +113,17 @@ body{
     line-height: 120px;
     margin-bottom: 10px;
 }
+
 .header__content-text{
     line-height: 40px;
     max-width: 470px;
     margin-bottom: 25px;
 }
+
 .header__btn{
     background-color: #BDAE82;
-    padding: 8px 72px;
+    max-width: 220px;
+    padding: 7px 71px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -113,6 +133,7 @@ body{
     color: #000000;
     cursor: pointer;
 }
+
 .section__title{
     font-family: 'Merriweather';
     font-style: normal;
@@ -121,17 +142,26 @@ body{
     line-height: 80px;
     text-align: center;
     color: #BDAE82;
-    padding-top: 100px;
+    padding-top: 98px;
     padding-bottom: 60px;
 }
+
 .skills__items{
     display: flex;
-    justify-content: space-around;
+  text-align: center;
+    justify-content: space-between;
 }
+
 .skills__item{
-    max-width: 320px;
+    max-width:  320px;
+    height: 240px;
     text-align: center;
+    
 }
+.skills__item+.skills__item{
+    margin-left: 40px;
+}
+
 .img-photo{
     max-width: 62px;
     max-height: 50px;
@@ -149,25 +179,36 @@ body{
     max-height: 50px
 }
 .skills__item-img{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #fff;
+    
 }
+
+
 .skills__item-title{
+
     line-height: 40px;
-    text-align: center;
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 20px;
+    
 }
+
 .skills__item-text{
     font-size: 18px;
     line-height: 36px;
-    max-width: 280px;
+    color: #FFFFFF;
+    max-height: 72px;
+    width: 280px;
+    margin: 0 20px 10px 20px;
 }
+
+
 .portfolio__butttons{
     margin-bottom: 60px;
     text-align: center;
 }
+
 .portfolio__buttons-item{
     font-family: 'Inter';
     font-style: normal;
@@ -179,25 +220,35 @@ body{
     text-transform: capitalize;
     background-color: transparent;
     background-repeat: no-repeat;
-    border: solid #BDAE82 1px;
+    border: solid #BDAE82 2px;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    padding: 7px 79px;
+    padding: 7px 70px;    
+    width: 220px;
+    max-height: 55px;
 }
+
 .portfolio__items{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+   justify-content: space-between;
 }
 .portfolio__item{
     max-width: 450px;
     max-height: 560px;
+   
+}
+.portfolio__item:first-of-type{
     margin-bottom: 25px;
+}
+.video__title{
+    margin-top: 5px;
 }
 .video__player{
     position: relative;
 }
+
 .player__bck-im{
     max-width: 1400px;
     max-height: 705px;
@@ -209,9 +260,14 @@ body{
     max-width: 130px;
     max-height: 130px;
 }
+.price__title{
+    padding-top: 80px;
+}
+
 .price__inner{
     margin-bottom: 100px;
 }
+
 .price__menu{
     display: flex;
     justify-content: space-between;
@@ -231,7 +287,7 @@ body{
     line-height: 56px;
     text-align: center;
     color: #FFFFFF;
-    margin: 43px auto 20px;
+    margin: 40px auto 20px;
 }
 .price__item-rate{
     font-family: 'Merriweather';
@@ -249,8 +305,9 @@ body{
     text-align: center;
     margin-bottom: 40px;
     width: 364px;
-    margin: 20px 43px 40px 43px;
+    margin: 20px 43px 43px 43px;
 }
+
 .price__button{
     text-decoration: none;
     font-family: 'Inter';
@@ -260,9 +317,11 @@ body{
     line-height: 40px;
     text-align: center;
     color: #000000;
-    padding: 17px 39px;
+    padding: 15px 39px;
     background-color: #BDAE82;
+    width: 55px;
 }
+
 .contact__inner{
     background-image: url(../images/contacts-bg.jpg);
     background-repeat: no-repeat;
@@ -282,12 +341,12 @@ body{
 }
 
 .contact__form-input{
-    border: 1px solid #BDAE82;
+    border: 2px solid #BDAE82;
     background-color: transparent;
-    height: 38px;
+    height: 50px;
     width: 100%;
     display: inline-block;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -296,7 +355,7 @@ body{
     color: #BDAE82;
     padding-left: 20px;
     padding-top: 5px;
-    padding-bottom: 5;
+    padding-bottom: 5px;
     
 }
 ::placeholder {
@@ -312,7 +371,9 @@ body{
     padding-bottom: 55px;
     overflow: hidden;
     height: 100px;
+    margin-bottom: 10px;
 }
+
 .contact__button{
     text-decoration: none;
     font-family: 'Inter';
@@ -326,12 +387,14 @@ body{
     background-color: #BDAE82;
     border: none;
 }
+
 .footer__content{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     align-items: center;
 }
+
 .footer__copy{
     display: flex;
     justify-content: space-between;
@@ -356,4 +419,9 @@ body{
 }
 .footer__social-link+.footer__social-link{
     margin-left: 20px;
+}
+.section__title::before{
+    width: 10px;
+    height: 3px;
+    color: indianred;
 }
